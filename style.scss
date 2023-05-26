@@ -1,0 +1,197 @@
+$color-head: rgb(126, 0, 135);
+$color-body: rgb(241, 204, 244);
+$button-padd: 5px 10px;
+$radius-activ: 25px 0 25px 0;
+$card-padd: 25px 25px;
+
+header{
+    position: sticky;
+    top: 0;
+    background-color: $color-head;
+    .logo{
+        font-size: 40px;
+        text-decoration: none;
+        color: $color-body;
+    }
+    ul{
+        margin: auto 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        li{
+            display: inline-block;
+            &:hover{
+                border: 1px solid $color-body;
+                border-radius: $radius-activ;
+            }
+            a{
+                text-decoration: none;
+                color: $color-body;
+                padding: $button-padd;
+                margin: 5px;
+                
+            }
+        }
+    }
+    .button_side{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+.container{
+    background-color: $color-body;
+}
+.id_serv{
+    color: $color-head;
+    text-align: center;
+    margin: 20px auto;
+    h2{
+        margin: 0 auto;
+    }
+}
+.id_place{
+    color: $color-body;
+    text-align: center;
+    margin: 20px auto;
+    h2{
+        margin: 0 auto;
+    }
+}
+.services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    img{
+        max-width: 100%;
+        max-height: 416px;
+        margin-bottom: 20px;
+    }
+    ol{
+        font-weight: 700;
+        color: $color-head;
+        padding-left: 15px;
+    }
+    li{
+        margin-top: 10px;
+        font-size: 14px;
+    }
+}
+
+.place{
+    background-color: $color-head;
+}
+.info{
+    border: 1px solid $color-body;
+    border-radius: $radius-activ;
+    padding: $card-padd;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    span:nth-child(1){
+        font-size: 30px;
+        color: $color-body;
+    }
+span:nth-child(2){
+    font-size: 30px;
+    margin-top: 40px;
+    color: $color-body;
+}
+span:nth-child(3){
+    font-size: 20px;
+    color: $color-body;
+}
+}
+
+.card_price{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: $card-padd;
+    border: 1px solid $color-head;
+    border-radius: $radius-activ;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    .card_class{
+        color: $color-head;
+        margin-bottom: 20px;
+    }
+    span{
+        width: 100%;
+        text-align: center;
+        line-height:30px;
+        color: $color-head;
+        font-weight: 500;
+        border-bottom: 1px solid $color-head;
+    }
+    .btn{
+        border-radius: $radius-activ;
+        background-color: $color-head;
+        color: $color-body;
+        margin-top: 20px;
+        font-weight: 500;
+        transition: all .5s ease-in-out;
+        &:hover{
+            border-radius: 0 25px 0 25px;
+        }
+    }
+}
+
+.card_block{
+    display: flex;
+    justify-content: center;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    .inp_1{
+        background-color: $color-body;
+        border: 1px solid $color-head;
+        border-radius: $radius-activ;
+        outline: none;
+        text-indent: 10px;
+    }
+    .area{
+        background-color: $color-body;
+        border: 1px solid $color-head;
+        border-radius: $radius-activ;
+        outline: none;
+        text-indent: 10px;
+    }
+    input::placeholder{
+        color: $color-head;
+        padding-left: 20px;
+        font-weight: 500;
+    }
+    textarea::placeholder{
+        color: $color-head;
+        padding-left: 20px;
+        font-weight: 500;
+    }
+    .btn_form{
+        width: 30%;
+        height: 40px;
+        background-color: $color-head;
+        color: $color-body;
+        font-weight: 500;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid $color-head;
+        border-radius: $radius-activ;
+    }
+}
+footer{
+    p{
+        color: $color-body;
+        font-weight: 500;
+    }
+    span{
+        color: $color-body;
+        font-weight: 500;
+    }
+}
